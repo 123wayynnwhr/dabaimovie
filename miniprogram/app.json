@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/mymap/mymap",
+    "pages/login/login",
+    "pages/log/log",
+    "pages/detail/detail",
+    "pages/weather/weather",
+    "pages/exam00/exam00"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundColor": "#1E90FF",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1E90FF",
+    "navigationBarTitleText": "大白影视", 
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "电影",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home_active.png"
+      },
+      {
+        "pagePath": "pages/mymap/mymap",
+        "text": "地图",
+        "iconPath": "./images/map.png",
+        "selectedIconPath": "./images/map_active.png"
+      },
+      {
+        "pagePath": "pages/weather/weather",
+        "text": "天气",
+        "iconPath": "./images/weather.png",
+        "selectedIconPath": "./images/weather-active.png"
+      },
+      {
+        "pagePath": "pages/log/log",
+        "text": "登录",
+        "iconPath": "./images/login.png",
+        "selectedIconPath": "./images/login_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

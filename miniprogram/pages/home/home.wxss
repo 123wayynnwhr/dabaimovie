@@ -1,0 +1,90 @@
+/* pages/home/home.wxss */
+
+/* 1.一部电影 */
+
+.movie {
+  display: flex; /*弹性布局*/
+  padding: 10rpx; /*内边距*/
+  border-bottom: 1rpx solid #ccc; /*底部边线*/
+}
+
+/* 2.左侧图片200 300 */
+
+.movie-img {
+  width: 200rpx;
+  height: 300rpx;
+  margin-right: 20rpx;
+}
+
+/* 3.右侧电影简介 */
+
+.movie-info {
+  font-size: 28repx; /*右侧文字大小*/
+  line-height: 1.8; /*垂直居中*/
+}
+
+/* 4.标题 */
+
+.movie-title {
+  font-size: 40rpx; /*标题中文字大小*/
+  color: #666;
+}
+
+/* 5.评分 */
+
+.movie-score {
+  color: #faaf00;
+}
+
+/* 6.按钮 */
+
+.movie-btn {
+  height: 60rpx;
+  background: #e54847;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+/* 添加省略号 */
+
+.ellipsis {
+  overflow: hidden; /*溢出隐藏*/
+  text-overflow: ellipsis; /*文字溢出加...*/
+  white-space: nowrap; /*不换行*/
+}
+
+swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+.navigation {
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: 400;
+}
+
+.navigation text {
+  color: #ccc;
+  font-size: 40rpx;
+  margin: 10rpx;
+}
+
+.navigation text:not(:first-of-type) {
+  font-size: 25rpx;
+  margin: 10rpx;
+  width: 150rpx;
+  height: 40rpx;
+  border-radius: 30rpx;
+  color: white;
+  background-color: #ccc;
+  cursor: pointer;
+  text-align: center;
+}
+.navigation text:not(:first-of-type) :hover{
+    background-color:skyblue;
+}

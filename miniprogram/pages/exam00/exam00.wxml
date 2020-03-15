@@ -1,0 +1,5 @@
+<!--pages/exam00/exam00.wxml-->
+<text>pages/exam00/exam00.wxml</text>
+<button bindtap="f2">调用云函数</button>
+<button bindtap="f3">调用云函数查询</button>
+<button bindtap="f4">调用豆瓣热门电影</button>

@@ -1,0 +1,28 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /*垂直居中*/
+  align-items: center; /*水平方向居中*/
+  justify-content:center ; /*垂直居中*/
+
+}
+
+image {
+  width: 280rpx;
+  height: 280rpx;
+  border-radius: 50%;
+  margin: 100rpx auto;
+}
+
+text {
+  font-size: 40rpx;
+  color:#7EC0EE	;
+  margin-bottom: 100rpx;
+}
+button{
+  display: block;
+  font-size: 30rpx;
+  border-radius: 20rpx;
+  background-color:rgba(124, 124, 124, 0.075);
+  padding-top:-20rpx;
+}

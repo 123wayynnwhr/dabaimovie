@@ -1,0 +1,42 @@
+<!--pages/detail/detail.wxml-->
+<!-- 一部电影详细信息 -->
+<view>
+  <!-- 电影海报大图片 模糊效果 -->
+  <view class="detail-container" style="background:url({{info.images.large}}) no-repeat top" wx:if="{{info.images.large.length>0}}"></view>
+  <!-- 灰色遮罩层 -->
+  <view class="detail-mask"></view>
+  <!-- 电影完整信息 -->
+  <view class="detail-info">
+    <!-- 左侧小图片 -->
+    <image src="{{info.images.large}}" class="detail-img" />
+    <!-- 右侧电影简介 -->
+    <view class="info">
+      <!-- 右侧电影简介-标题 -->
+      <view>{{info.title}}</view>
+      <!-- 右侧电影简介-评论 -->
+      <view class="info-sc">{{info.rating.average}}</view>
+      <!-- 右侧电影简介-国家 -->
+      <view>{{info.countries[0]}}</view>
+      <!-- 右侧电影简介-导演 -->
+      <view>{{info.directors[0].name}}</view>
+    </view>
+    <!--info end-->
+  </view>
+  <!--detail-info end-->
+  <!-- 简介 -->
+  <view class="desc">{{info.summary}}</view>
+    <!-- 电影评论输入框(vant weapp组件)-->
+    <van-field value="{{ val2 }}" placeholder="请输入用户名" bind:change="onChangeVal2" />
+    <!-- 评分 -->
+    <van-rate value="{{ val3 }}" bind:change="onChangeVal3" />
+    <!-- 上传图片按钮 -->
+    <van-button type="warning" size="large" bindtap="upload">上传图片</van-button>
+    <!-- 图片预览区域 -->
+    <view>
+       <block wx:for="{{image}}" wx:key="index" >
+       <image src="{{item}}" class="info-img"></image>
+       </block>
+    </view>
+    <!-- 发表评论按钮 -->
+    <van-button type="danger" size="large" bindtap="submit">提交评论</van-button>
+</view>

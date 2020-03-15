@@ -1,0 +1,51 @@
+/* pages/detail/detail.wxss */
+/* 1.背景图片 模糊 */
+.detail-container{
+  height: 400rpx;/*元素高度*/
+  opacity: 0.9;/*透明度*/
+  filter:blur(40rpx);/*高斯模糊滤镜*/
+}
+/* 2.灰色遮罩层 */
+.detail-mask{
+  position: absolute;/*绝对定位*/
+  width: 100%;
+  height:400rpx;/*元素高度*/
+  top:0;
+  left: 0;
+  background: #333333;
+  z-index: -1;/*显示模糊图片下方*/
+}
+/* 3.电影信息 */
+.detail-info{
+  position: absolute; /*绝对定位*/
+  width:100%;
+  height:400rpx;/*元素宽高*/
+  top:0;
+  left:0;
+  display:flex;/*子元素水平*/
+  padding:20rpx;
+}
+/* 4.电影信息-左侧小图片-*/
+.detail-img{
+  width: 280rpx;
+  height:90%;
+  margin-right:24rpx;
+}
+/* 5.电影信息-右侧电影信息 */
+.info{
+  line-height:35rpx; /*间距值*/
+  color:#fff;
+  font-size:24rpx;
+}
+/* 6.电影描述 */
+.desc{
+color:#555;
+font-size:24rpx;
+padding:20rpx;
+}
+/* 7.预览图片 */
+.info-img{
+  width:200rpx;/* 预览图宽高*/
+  height:200rpx;
+  margin-right:20rpx;
+}

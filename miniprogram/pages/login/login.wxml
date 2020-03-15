@@ -1,0 +1,11 @@
+<!--pages/login/login.wxml-->
+<view>微信登录组件</view>
+<!--如果登录成功隐藏按钮，没登录显示-->
+<button type="primary"
+ style="width:80%"
+ open-type="getUserInfo"
+ bindgetuserinfo="getUserInfo3">微信登录</button>
+<view style="margin-top:25rpx"></view>
+ <!--添加按钮-->
+ <button type="primary" style="width:80%"
+  wx:if="{{userId}}">退出</button>

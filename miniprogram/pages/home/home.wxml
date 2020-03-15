@@ -1,0 +1,42 @@
+<!--pages/home/home.wxml-->
+<!-- <text>pages/home/home.wxml</text>
+<van-button type="default">默认按钮</van-button>
+<van-button type="primary">主要按钮</van-button> -->
+<view clss="container">
+  <swiper autoplay="true" style="width:750rpx;height:230rpx;">
+    <swiper-item>
+      <image src="../../images/swiper/01.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/swiper/02.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/swiper/03.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/swiper/04.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="navigation">
+  <text>排行榜</text>
+  <text>热播榜</text>
+  <text>新片榜</text>
+  <text>高分榜</text>
+</view>
+<!-- 1.创建一部电影标签组 -->
+<view class="movie" wx:for="{{list}}" wx:key="index">
+  <!-- 2.左侧图片(电影海报) -->
+  <image src="{{item.images.small}}" class="movie-img"></image>
+  <!-- 3. 右侧电影简介-->
+  <view class="movie-info">
+    <!-- 3.1.电影标题 -->
+    <view class="movie-title ellipsis" style="width:210rpx">{{item.title}}</view>
+    <!-- 3.2电影评分 -->
+    <view class="movie-score">{{item.rating.average}}</view>
+    <!-- 3.3电影年份-->
+    <view>{{item.year}}</view>
+    <!-- 3.4电影详情按钮 -->
+    <button class="movie-btn" bindtap="detail" data-id="{{item.id}}">详情</button>
+  </view>
+</view>

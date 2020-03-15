@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index",
+    "van-rate": "@vant/weapp/rate/index",
+    "van-button": "@vant/weapp/button/index"
+  },
+      "navigationBarTitleText": "电影详情"
+}

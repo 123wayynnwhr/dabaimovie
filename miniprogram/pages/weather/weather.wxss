@@ -1,0 +1,30 @@
+/* miniprogram/pages/weather/weather.wxss */
+.container{
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.detail{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+}
+.bar{
+  display:flex;
+  flex-direction: row;
+  margin: 20rpx 0;
+}
+.box{
+  width: 33.3%;
+  text-align: center;
+}
+text{
+font-size:60rpx;
+color:#3c5f81
+}
+image{
+  width: 220rpx;
+  height: 220rpx;
+}
